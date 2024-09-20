@@ -34,7 +34,7 @@ function MyFooter() {
                             <FooterNav navigateTo={"/"} name="Home" />
                             <FooterNav navigateTo={"/speakers"} name="Speakers" />
                             <FooterNav navigateTo={"/committee"} name="Committee" />
-                            <FooterNav navigateTo={"/pasteditions"} name="Past Editions" />
+                            
                             <FooterNav navigateTo={"/contact"} name="Contact Us" />
                         </div>
                     </div>

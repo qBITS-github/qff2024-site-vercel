@@ -1,5 +1,4 @@
 import React from "react";
-import aboutbottompng from '../../images/assets/bits-top.jpg';
 import biodeptpic from '../../images/biodeptpic.jpg'
 
 const aboutText2 =
@@ -37,11 +36,6 @@ function BPGCBioDept() {
           <p style={{fontWeight: '400'}} className="about-txt-cnt">{aboutText2}</p>
           <p style={{fontWeight: '400'}} className="about-txt-cnt">{aboutText3}</p>
         </div>
-        <img
-          src={biodeptpic}
-          alt="Scenic Campus View"
-          className="about-img-btm"
-        />
       </div>
     </div>
   );

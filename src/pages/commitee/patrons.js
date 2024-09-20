@@ -1,6 +1,4 @@
 import React from "react";
-import patron1 from "../../images/speakers/patron1.jpg";
-import patron2 from "../../images/speakers/patron2.jpg";
 
 class CommitteeMember {
   constructor(memberType, name, description, institute, link, img) {
@@ -37,22 +35,7 @@ class CommitteeMember {
 }
 
 const ChiefPatron = [
-  new CommitteeMember(
-    "Chief Patron",
-    "Prof. V Ramgopal Rao",
-    "Vice Chancellor,",
-    "Birla Institute of Technology and Science, Pilani",
-    "https://www.bits-pilani.ac.in/pilani/v-ramgopal-rao/",
-    patron1
-  ),
-  new CommitteeMember(
-    "Patron",
-    "Prof. Suman Kundu",
-    "Director,",
-    "BITS Pilani K K Birla Goa Campus",
-    "https://www.bits-pilani.ac.in/goa/suman-kundu/",
-    patron2
-  ),
+  
 ];
 
 function Patrons() {
