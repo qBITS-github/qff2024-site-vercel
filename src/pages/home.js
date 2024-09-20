@@ -1,23 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BITSDome from "../images/bdomee.jpeg";
+import qffimg from "../images/Sponsored/Blog-Image_01.png";
 import BITSDClassroom from "../images/bits-d-classroom.jpg";
 import BITSAudi from "../images/bits-audi.jpeg";
 import Timer from "../layouts/timer";
 import Timeline from "./timeline";
-import ptcailogo from "../images/icons/ptcai.png";
+import qbits from "../images/qbits logo.png";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import ctcpblogo from "../images/icons/ctcpb-logo.png";
+import qfflogo from "../images/Sponsored/Fall Fest.jpg";
 import { ListGroup } from "react-bootstrap";
 
 const homepg_text =
   ", a well-known all-India Institute for higher education. In keeping with the tradition of innovation and creativity, a state-of-the-art touch is given to the infrastructure of the entire institute without diminishing, in the least, the natural beauty of Goa surrounding the campus. Spacious labs, classrooms with soundproof acoustics, modern furniture, library and computer labs with internet facility define the infrastructural counters of the institution.";
 const homepg_text2 =
-  "Department of Biological Sciences, BITS Pilani, K. K. Birla Goa Campus along with Plant Tissue Culture Association (India) invites you for National Symposium. The symposium aims to bring eminent scientists working in the frontier areas of Plant Tissue Culture, Biotechnologist, Genomics, Genetics, Metabolomics, Stress Biology, Developmental Biologist together and provide a forum for sharing their immense experience to encourage and inspire young researchers for exploring the emerging areas of Plant Biotechnology. The conference would address, deliberate and consolidate the issues and technologies aimed to develop climate resilient crops to meet the global food demand.";
-const homepg_text3 = 
-  "The Plant Tissue Culture Association of India (PTCA(I)), registered in 1976, is an elite body of Plant Tissue Culture Scientists, several of whom are pioneers in this field and while other have established scientific credentials. PTCA(I) has been organizing symposia which facilitated coming together of faculties, students, researchers and NGOs to deliberate on recent advances in plant science and come out with proposals for future line of research."
+  "Our Quantum Computing Club is dedicated to pushing the boundaries of what’s possible in computing. We actively participate in hackathons, discuss research papers, and organize a range of events throughout the year. Our signature event, the Qiskit Fall Fest, features engaging hackathons, coding challenges, and insightful talks from experts in the field. Whether you’re a seasoned coder or just curious about quantum mechanics, or don’t care at all about physics and computer science our community offers opportunities to learn, collaborate, and innovate and MOST IMPORTANTLY HAVE LOADS OF FUN!!!!!"
 function Home() {
   return (
     <div>
@@ -35,20 +33,7 @@ function Home() {
               }}
             >
               <div class="d-flex">
-                <div className="d-flex">
-                  <h1
-                    style={{
-                      textAlign: "start",
-                      fontWeight: "bold",
-                      color: "grey",
-                      fontSize: "7rem",
-                      marginTop: "30px",
-                    }}
-                  >
-                    46<sup>th</sup>
-                  </h1>
-                </div>
-                <div className="d-flex">
+               <div className="d-flex">
                   <h1
                     style={{
                       textAlign: "start",
@@ -57,21 +42,9 @@ function Home() {
                       padding: "20px",
                     }}
                   >
-                    Annual Meeting of Plant Tissue Culture Association India
+                    IBM Qiskit Fall Fest 2024
                   </h1>
                 </div>
-              </div>
-              <div class="d-flex">
-                <h1
-                  className=""
-                  style={{
-                    textAlign: "start",
-                    fontWeight: "300",
-                    fontSize: "2rem",
-                  }}
-                >
-                  Symposium on Current Trends and Challenges in Plant Biotechnology - 2025
-                </h1>
               </div>
               <div class="d-flex-inline" style={{ textAlign: "start" }}>
                 {/* <a
@@ -88,7 +61,7 @@ function Home() {
                   class="black-button m-1"
                 >
                   {" "}
-                  Flyer <i class="fa fa-download" aria-hidden="true"></i>
+                  Schedule <i class="fa fa-download" aria-hidden="true"></i>
                 </a>
               </div>
               <div class="d-flex" style={{ textAlign: "start" }}>
@@ -106,8 +79,8 @@ function Home() {
               }}
             >
               <img
-                src={BITSDome}
-                alt="Bdome"
+                src={qffimg}
+                alt="qffimg"
                 style={{ paddingBottom: "200px" }}
                 class="img-fluid"
               />
@@ -194,7 +167,7 @@ function Home() {
           <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
               <h1 class="" style={{ textAlign: "center", fontWeight: "light" }}>
-                Thematic Areas <br />
+                Events Lined up <br />
               </h1>
               <div
                 style={{
@@ -204,21 +177,14 @@ function Home() {
                 }}
               >
                 <ListGroup variant="flush">
-                  <ListGroup.Item> • Plant Tissue Culture and Enterpreneurship • </ListGroup.Item>
+                  <ListGroup.Item> • Intro to Quantum Computing - Q101 • </ListGroup.Item>
                   <ListGroup.Item>
                     {" "}
-                    • Plant Genome and Editing •{" "}
+                    • Hackathon •{" "}
                   </ListGroup.Item>
-                  <ListGroup.Item> • Plant Development • </ListGroup.Item>
-                  <ListGroup.Item> • Abiotic Stress Biology • </ListGroup.Item>
-                  <ListGroup.Item>
-                    {" "}
-                    • Plant Microbe Interaction •{" "}
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    {" "}
-                    • Plant Metabolites and Nutraceuticals •{" "}
-                  </ListGroup.Item>
+                  <ListGroup.Item> • Qiskit Challenges • </ListGroup.Item>
+                  <ListGroup.Item> • Talks by Guest Speakers • </ListGroup.Item>
+                  
                 </ListGroup>
               </div>
             </div>
@@ -272,20 +238,20 @@ function Home() {
       <div class="container py-4 my-5">
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={ptcailogo} alt="ptcailogo" class="img-fluid" />
+            <img src={qbits} alt="ptcailogo" class="img-fluid" />
           </div>
           <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
               <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
-                About PTCAI
+                About qBITS
                 <br />
               </h1>
               <p class="" style={{ fontWeight: "400", textAlign: "justify" }}>
                 {" "}
-                {homepg_text3}{" "}
+                {homepg_text2}{" "}
               </p>
               <div class="d-flex" style={{ textAlign: "start" }}>
-                <Link to="/about/ptcai/" class="black-button">
+                <Link to="qbits/" class="black-button">
                   VIEW MORE
                 </Link>
               </div>
@@ -297,17 +263,17 @@ function Home() {
       <div class="container py-4 my-5">
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={ctcpblogo} alt="ctcpblogo" class="img-fluid" />
+            <img src={qfflogo} alt="ctcpblogo" class="img-fluid" />
           </div>
           <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
               <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
-                About the Conference
+                About the Fall Fest
                 <br />
               </h1>
               <p class="" style={{ fontWeight: "400", textAlign: "justify" }}>
                 {" "}
-                {homepg_text2}{" "}
+                {homepg_text}{" "}
               </p>
               {/* 
                 <div class="d-flex" style={{ textAlign: "start" }}>

@@ -1,8 +1,8 @@
 import React from 'react';
 import NavLogo from '../images/bits-logo.png';
 import { Link } from 'react-router-dom';
-import ctcpblogo from "../images/icons/ctcpb-logo.png"
-import ptcaiLogo from "../images/icons/ptcai.png"
+import qbits from "../images/qbits logo.png"
+import qff from "../images/Sponsored/Fall Fest.jpg"
 
 
 let NavWithDropDown = (props) => {
@@ -40,7 +40,7 @@ function MyNavbar() {
 			<div class="container-fluid">
 
 				<a class="navbar-brand my-2" href="/">
-					<img src={ctcpblogo} height="90" class="align-top p-1" alt="ctcpblogo" />
+					<img src={qbits} height="90" class="align-top p-1" alt="ctcpblogo" />
 				</a>
 
 				<a class="navbar-brand my-2" href="/">
@@ -48,7 +48,7 @@ function MyNavbar() {
 				</a>
 				
 				<a class="navbar-brand my-2" href="/">
-					<img src={ptcaiLogo} height="90" class="align-top p-1" alt="ptcailogo" />
+					<img src={qff} height="90" class="align-top p-1" alt="ptcailogo" />
 				</a>
 				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,25 +61,24 @@ function MyNavbar() {
 				
 						<NavWithDropDown name="  About  ">
 							<DropDownItem link={"/about/bitspilani"} showname={"University"} />
-							<DropDownItem link={"/about/bpgcbiodept"} showname={"Department of Biological Sciences"} />
-							<DropDownItem link={"/about/ctcpb"} showname={"CTCPB 2025"} />
-							<DropDownItem link={"/about/ptcai"} showname={"PTCAI"} />
+							<DropDownItem link={"qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
 						</NavWithDropDown>
 				
 						<NavWithoutDropDown link={"/sponsorship"} showname={"Sponsors"}  />
 				
 						<NavWithoutDropDown link={"/speakers"} showname={"Speakers"}  />
 				
-						<NavWithoutDropDown link={"/committee"} showname={"Committee"}  />
 				
 						<NavWithoutDropDown link={"/registration"} showname={"Registration"}  />
 				
-						<NavWithoutDropDown link={"/pasteditions"} showname={"Past Editions"}  />
+							<NavWithDropDown name="Past Events">
+								<DropDownItem link={""} showname={"CTCPB 2023"} />
+								<DropDownItem link={""} showname={"CTCPB 2021"} />
+							</NavWithDropDown>
 				
 						<NavWithDropDown name="Venue" >
 							<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
 							<DropDownItem link={"/venue/howtoreach"} showname={"How to reach?"} />
-							<DropDownItem link={"/venue/accomodation"} showname={"Accomodation"} />
 						</NavWithDropDown>
 				
 						<NavWithoutDropDown link={"/contact"} showname={"Contact Us"}  />

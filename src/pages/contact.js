@@ -2,19 +2,29 @@ import React from "react";
 import BITSGoaOnGMAP from "../layouts/bits-goa-map";
 
 const contactuslink = "";
-const ctcpb_email = "ctcpb2025@gmail.com"
+const qbits_email = "qbits.bitsgoa@gmail.com"
 
 const profContact = [{
-    "name": "Prof. Kundan Kumar",
-    "phone_text": "+91-832-2580196",
-    "profile": "https://universe.bits-pilani.ac.in/goa/kundan/Profile"
-}
+    "name": "Nakul Bhachawat",
+    "phone_text": "+91-6262602441",
+    "profile": "linkedin.com/nakul-bhachawat"
+}, 
+    {
+        "name": "Shreyas Keskar",
+        "phone_text": "+91-9404913723",
+        "profile": "linkedin.com/shreyas-keskar"
+    },
+    {
+        "name": "Harsha",
+        "phone_text": "+91-9823581916",
+        "profile": "linkedin.com/siddharth-bhat"
+    }
 ];
 
 const ProfContact = () => {
     return profContact.map(element => (
     <div class="col-sm-12 col-md-6" style={{marginBottom: '7px'}}>
-        <a className="connectstyle2" href={element["profile"]} target="_blank" rel="nopener noreferrer" title="Visit website">{element["name"]} <i class="fa fa-external-link"></i></a> <br/> Office:&nbsp;
+        <a className="connectstyle2" href={element["profile"]} target="_blank" rel="nopener noreferrer" title="Visit website">{element["name"]} <i class="fa fa-external-link"></i></a> <br/> WhatsApp:&nbsp;
         <a className="connectstyle" href={"tel:+91" + element["phone"]} title="Call" >{element["phone_text"]}</a>
     </div>
     ));
@@ -35,8 +45,8 @@ function Contact() {
                         </p>
                         <p style={{fontSize: '140%', fontWeight: 'bold'}}>
                             <i class="fa fa-envelope">&nbsp;</i>
-                            <a style={{ color: '#0a9dff', backgroundColor: 'transparent', textDecoration: 'none'}} href={"mailto:" + ctcpb_email}>
-                                {ctcpb_email}
+                            <a style={{ color: '#0a9dff', backgroundColor: 'transparent', textDecoration: 'none'}} href={"mailto:" + qbits_email}>
+                                {qbits_email}
                             </a>
                         </p>
                         <div class="row mt-1">
