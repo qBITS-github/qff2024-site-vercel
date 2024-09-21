@@ -2,7 +2,7 @@ import React from 'react'
 import {useState, useEffect} from 'react';
 
 // Change date from here and NOT from Timer function
-const date = "2025-02-24";
+const date = "2024-11-16";
 
 const Timer = () => {
 
@@ -66,7 +66,7 @@ const Timer = () => {
     return (
         <div className="timer-container my-5">
             <div className="timer">
-                <h2 className="my-3">CONFERENCE BEGINS IN</h2>
+                <h2 className="my-3">Qiskit Fall Fest Begins in</h2>
                 <div className="container mb-5">
                     <div className="row justify-content-center px-2">
                         <TimerCard count={days} word="DAYS" />

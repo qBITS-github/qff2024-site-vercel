@@ -65,7 +65,7 @@ function Home() {
                 </a>
               </div>
               <div class="d-flex" style={{ textAlign: "start" }}>
-                <h3 style={{ fontWeight: "300" }}>FEBRUARY 24-26 | 2025</h3>
+                <h3 style={{ fontWeight: "300" }}>November 16-24 | 2024</h3>
               </div>
             </div>
           </div>
