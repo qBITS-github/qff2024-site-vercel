@@ -56,7 +56,7 @@ function MyFooter() {
                 </div>
                 <div class="row justify-content-center">
                     &copy; 2025 All Rights Reserved<br />
-                    Designed &amp; Developed by Department of Biology, BITS Pilani Goa
+                    Designed &amp; Developed by qBITS
                 </div>
             </div>
         </div>

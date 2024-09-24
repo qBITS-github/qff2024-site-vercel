@@ -2,13 +2,14 @@ import React from 'react';
 import NavLogo from '../images/bits-logo.png';
 import { Link } from 'react-router-dom';
 import qbits from "../images/qbits logo.png"
+import qbits_nobg from "../images/qbits_nobg.png"
 import qff from "../images/Sponsored/Fall Fest.jpg"
 
 
 let NavWithDropDown = (props) => {
 	return (
 		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle text-dark" href='/' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<a class="nav-link dropdown-toggle text-light" style={{background: '#0d1011'}} href='/' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			{props.name} &nbsp;<i class="fa fa-angle-down" style={{color: 'black'}}></i>
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown" >
@@ -21,35 +22,43 @@ let NavWithDropDown = (props) => {
 let NavWithoutDropDown = ({link, showname}) => {
 	return (
 		<li class="nav-item">
-			<Link className='nav-link text-dark' data-toggle="collapse" data-target=".navbar-collapse.show" to={link}>{showname}</Link>
+			<Link className='nav-link text-light' style={{background: '#0d1011'}} data-toggle="collapse" data-target=".navbar-collapse.show" to={link}>{showname}</Link>
 		</li>
 	)
 }
-
+let NavWithoutDropDownLinked = ({link, showname}) => {
+	return (
+		<li class="nav-item">
+			<a className='nav-link text-light' style={{background: '#0d1011'}}  href={link} target="_blank" rel="noopener noreferrer">{showname}</a>
+		</li>
+	)
+}
 let DropDownItem = ({link, showname}) => {
 	return (
 		<Link style={{fontWeight: '400'}} class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" to={link}>{showname}</Link>
 	)
 }
 
+let DropDownItemLinked = ({link, showname}) => {
+	return (
+		<a style={{fontWeight: '400'}} class="dropdown-item"  href={link} target="_blank" rel="noopener noreferrer">{showname}</a>
+	)
+}
+
 function MyNavbar() {
 
 	return (
-    <div class="container-fluid">
-		<nav class="navbar navbar-light px-3 navbar-expand-lg sticky-top bg-white">
+    <div class="container-fluid" style={{background: '#0d1011'}}>
+		<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top " style={{background: '#0d1011'}}>
 			<div class="container-fluid">
 
 				<a class="navbar-brand my-2" href="/">
-					<img src={qbits} height="90" class="align-top p-1" alt="ctcpblogo" />
+					<img src={qbits_nobg} height="90" class="align-top p-1" alt="ctcpblogo" />
 				</a>
 
-				<a class="navbar-brand my-2" href="/">
-					<img src={NavLogo} height="100" class="align-top p-1" alt="bitslogo" />
-				</a>
 				
-				<a class="navbar-brand my-2" href="/">
-					<img src={qff} height="90" class="align-top p-1" alt="ptcailogo" />
-				</a>
+				
+				
 				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -61,20 +70,16 @@ function MyNavbar() {
 				
 						<NavWithDropDown name="  About  ">
 							<DropDownItem link={"/about/bitspilani"} showname={"University"} />
-							<DropDownItem link={"qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
+							<DropDownItemLinked link={"https://qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
 						</NavWithDropDown>
 				
-						<NavWithoutDropDown link={"/sponsorship"} showname={"Sponsors"}  />
-				
+						
 						<NavWithoutDropDown link={"/speakers"} showname={"Speakers"}  />
 				
 				
-						<NavWithoutDropDown link={"/registration"} showname={"Registration"}  />
+						<NavWithoutDropDownLinked link={"https://qbitsbpgc.wordpress.com"} showname={"Registration"}  />
 				
-							<NavWithDropDown name="Past Events">
-								<DropDownItem link={""} showname={"CTCPB 2023"} />
-								<DropDownItem link={""} showname={"CTCPB 2021"} />
-							</NavWithDropDown>
+						
 				
 						<NavWithDropDown name="Venue" >
 							<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
