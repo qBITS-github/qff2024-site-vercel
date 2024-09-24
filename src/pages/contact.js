@@ -16,8 +16,8 @@ const profContact = [{
     },
     {
         "name": "Harsha",
-        "phone_text": "+91-9823581916",
-        "profile": "linkedin.com/siddharth-bhat"
+        "phone_text": "+91-6360832022",
+        "profile": "linkedin.com/harsha-tau"
     }
 ];
 
