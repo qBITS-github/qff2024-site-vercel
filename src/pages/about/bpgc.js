@@ -11,7 +11,7 @@ const aboutText3 =
 
 function BPGC() {
   return (
-    <div className="container" style={{marginBottom: "45px"}}>
+    <div className="container" style={{marginBottom: "45px", color: "white"}}>
     <div className="titleStyle1">About </div>
       <div className="titleStyle2">
         Birla Institute of Technology and Science
@@ -24,9 +24,9 @@ function BPGC() {
             alt="Scenic Campus View"
             className="about-img-cnt"
           />
-          <p style={{fontWeight: '400'}} className="about-txt-cnt">The <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener noreferrer" class="modern-link">Birla Institute of Technology &amp; Science, Pilani</a>{aboutText}</p>
-          <p style={{fontWeight: '400'}} className="about-txt-cnt">{aboutText2}</p>
-          <p style={{fontWeight: '400'}} className="about-txt-cnt">{aboutText3}</p>
+          <p style={{fontWeight: '400', color: "white"}} className="about-txt-cnt">The <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener noreferrer" class="modern-link">Birla Institute of Technology &amp; Science, Pilani</a>{aboutText}</p>
+          <p style={{fontWeight: '400', color: "white"}} className="about-txt-cnt">{aboutText2}</p>
+          <p style={{fontWeight: '400', color: "white"}} className="about-txt-cnt">{aboutText3}</p>
         </div>
         <img
           src={aboutbottompng}

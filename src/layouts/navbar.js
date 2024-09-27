@@ -2,7 +2,7 @@ import React from 'react';
 import NavLogo from '../images/bits-logo.png';
 import { Link } from 'react-router-dom';
 import qbits from "../images/qbits logo.png"
-import qbits_nobg from "../images/qbits_nobg.png"
+import qbits_nobg from "../images/2024.png"
 import qff from "../images/Sponsored/Fall Fest.jpg"
 
 
@@ -53,7 +53,7 @@ function MyNavbar() {
 			<div class="container-fluid">
 
 				<a class="navbar-brand my-2" href="/">
-					<img src={qbits_nobg} height="90" class="align-top p-1" alt="ctcpblogo" />
+					<img src={qbits_nobg} height="120" class="align-top p-1" alt="ctcpblogo" />
 				</a>
 
 				

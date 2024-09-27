@@ -22,7 +22,7 @@ import Notification from './layouts/notification';
 function App() {
   return (
     <div className="App" style={{"display": "flex","min-height": "100vh", "flex-direction": "column", "justify-content": "flex-start"}}>
-		<Notification />
+		
 		<MyNavBar />
 		<ScrollToTop>
 		<Routes>
