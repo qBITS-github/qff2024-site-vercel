@@ -56,6 +56,7 @@ function Home() {
                   >
                     Qiskit Fall Fest 2024
                   </h1>
+                  <h3 style={{ fontWeight: "300", color: "white" }}>November 16-24 | 2024</h3>
                 </div>
               </div>
               <div class="d-flex-inline" style={{
@@ -82,7 +83,7 @@ function Home() {
                 </a>
               </div>
               <div class="d-flex" style={{ textAlign: "start" }}>
-                <h3 style={{ fontWeight: "300" }}>November 16-24 | 2024</h3>
+                
               </div>
             </div>
           </div>

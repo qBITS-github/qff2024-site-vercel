@@ -11,7 +11,7 @@ function Speakers() {
         marginBottom: "50px",
       }}
     >
-      <div className="titleStyle1">Invited Speakers</div>
+      <div className="titleStyle1" style={{color: "white"}}>Invited Speakers</div>
       <div class="divider" style={{ marginBottom: "30px" }}></div>
       <div
         className="flex speakers-grid"
