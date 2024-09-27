@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 
+
+
 // Change date from here and NOT from Timer function
 const date = "2024-11-16";
 
@@ -54,25 +56,44 @@ const Timer = () => {
 
     let TimerCard = ({count,word}) => {
         return (
-            <div className="card col-lg-2 col-md-3 col-sm-3 px-0 py-lg-5 col" >
-                <div className="card-body">
-                    <h1 className='timer'>{count}<br/></h1>
-                    <p className="card-text">{word}</p>
-                </div>
+            <div 
+            className="card col-lg-2 col-md-3 col-sm-3 px-0 py-lg-5 col"  
+            style={{ 
+            background: '#0d1011', 
+            color: 'white',
+            position: 'relative'
+            }}
+            >
+            <div className="card-body" >
+            <h1 className='timer' >{count}<br/></h1>
+            <p className="card-text" >{word}</p>
+            </div>
+            {word !== "SECS" && (
+            <div 
+            style={{
+            position: 'absolute',
+            top: '25%',
+            right: '0',
+            height: '40%',
+            width: '2px',
+            backgroundColor: 'white'
+            }}
+            />
+            )}
             </div>
         )
     }
 
     return (
-        <div className="timer-container my-5">
+        <div className="timer-container my-5" style={{ color: 'white', fontFamily: 'IBM Plex Sans, sans-serif' }}>
             <div className="timer">
                 <h2 className="my-3">Qiskit Fall Fest Begins in</h2>
                 <div className="container mb-5">
                     <div className="row justify-content-center px-2">
                         <TimerCard count={days} word="DAYS" />
-                        <TimerCard count={hrs} word="HRS" />
-                        <TimerCard count={mins} word="MINS" />
-                        <TimerCard count={secs} word="SECS" />
+                        <TimerCard count={hours} word="HRS" />
+                        <TimerCard count={minutes} word="MINS" />
+                        <TimerCard count={seconds} word="SECS" />
                     </div>
                 </div>
             </div>
