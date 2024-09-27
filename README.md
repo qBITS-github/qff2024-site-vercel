@@ -48,3 +48,45 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+
+ {/* Use the below format if there are multiple associations and sponsers */}
+
+      {/* <section className="section-carousel">
+        <h2 className="my-5 text-center">IN ASSOCIATION WITH</h2>
+        <div class="container-fluid justify-content-center">
+          <OwlCarousel
+              items={1}
+              className="owl-theme px-5"
+              loop
+              nav
+              margin={15}
+            >
+          <div className="justify-content-center">
+            <img
+              className="img px-lg-5"
+              style={{ height: "300px", alignItems: "center" }}
+              src=dilogo}
+              alt=""
+            />
+          </div>
+        </OwlCarousel>
+        </div>
+      </section>
+
+      <section className="section-carousel">
+        <h2 className="my-5 text-center">SPONSORED BY</h2>
+        <div class="container-fluid test">
+          <OwlCarousel
+            items={3}
+            className="owl-theme px-5"
+            loop
+            nav
+            margin={15}
+          >
+            <div>
+              <img className="img px-lg-5" src={ptcailogo} alt="" />
+            </div>
+          </OwlCarousel>
+        </div>
+      </section> */}

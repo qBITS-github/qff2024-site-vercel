@@ -5,11 +5,11 @@ import BITSDClassroom from "../images/bits-d-classroom.jpg";
 import BITSAudi from "../images/bits-audi.jpeg";
 import Timer from "../layouts/timer";
 import Timeline from "./timeline";
-import qbits from "../images/qbits logo.png";
+import qbits from "../images/qbits_nobg.png";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import qfflogo from "../images/Sponsored/Fall Fest.jpg";
+import qfflogo from "../images/Sponsored/QFF_dark.png";
 import { ListGroup } from "react-bootstrap";
 
 const homepg_text =
@@ -47,10 +47,11 @@ function Home() {
                   <h1
                     style={{
                       textAlign: "center",
-                      fontWeight: "400",
+                      fontWeight: "300",
                       color: "white",
                       padding: "20px",
                       alignItems: 'center',
+                      fontFamily: "IBM Plex Sans, sans-serif",
                     }}
                   >
                     Qiskit Fall Fest 2024
@@ -120,110 +121,74 @@ function Home() {
         </div>
         </div>
         
-      </div> */}
+            </div> */}
 
- {/* Use the below format if there are multiple associations and sponsers */}
 
-      {/* <section className="section-carousel">
-        <h2 className="my-5 text-center">IN ASSOCIATION WITH</h2>
-        <div class="container-fluid justify-content-center">
-          <OwlCarousel
-              items={1}
-              className="owl-theme px-5"
-              loop
-              nav
-              margin={15}
-            >
-          <div className="justify-content-center">
-            <img
-              className="img px-lg-5"
-              style={{ height: "300px", alignItems: "center" }}
-              src={ptcailogo}
-              alt=""
-            />
-          </div>
-        </OwlCarousel>
-        </div>
-      </section>
 
-      <section className="section-carousel">
-        <h2 className="my-5 text-center">SPONSORED BY</h2>
-        <div class="container-fluid test">
-          <OwlCarousel
-            items={3}
-            className="owl-theme px-5"
-            loop
-            nav
-            margin={15}
-          >
-            <div>
-              <img className="img px-lg-5" src={ptcailogo} alt="" />
-            </div>
-          </OwlCarousel>
-        </div>
-      </section> */}
-
-      <div class="container my-5 py-0">
+            <div class="container my-5 py-0">
         <div class="row  justify-content-center align-middle">
           <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 class="" style={{ textAlign: "center", fontWeight: "light" }}>
-                Events Lined up <br />
+              <h1 class="" style={{ textAlign: "center", fontWeight: "light", color: "white" }}>
+          Events Lined up <br />
               </h1>
               <div
-                style={{
-                  background: "#30cb80",
-                  fontSize: "1.2rem",
-                  fontWeight: "400",
-                }}
+          style={{
+            backgroundColor: "#0a0c0d",
+            fontSize: "1.2rem",
+            fontWeight: "400",
+          }}
               >
-                <ListGroup variant="flush">
-                  <ListGroup.Item> • Intro to Quantum Computing - Q101 • </ListGroup.Item>
-                  <ListGroup.Item>
-                    {" "}
-                    • Hackathon •{" "}
-                  </ListGroup.Item>
-                  <ListGroup.Item> • Qiskit Challenges • </ListGroup.Item>
-                  <ListGroup.Item> • Talks by Guest Speakers • </ListGroup.Item>
-                  
-                </ListGroup>
+          <ListGroup variant="flush">
+            <hr style={{ backgroundColor: 'white' }} />
+            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Intro to Quantum Computing - Q101 • </ListGroup.Item>
+            <hr style={{ backgroundColor: 'white' }} />
+            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}>
+              {" "}
+              • Quest - Quantum Hackathon •{" "}
+            </ListGroup.Item >
+            <hr style={{ backgroundColor: 'white' }} />
+            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Qiskit Challenges • </ListGroup.Item>
+            <hr style={{ backgroundColor: 'white' }} />
+            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Talks by Guest Speakers • </ListGroup.Item>
+            <hr style={{ backgroundColor: 'white' }} />
+          </ListGroup>
               </div>
             </div>
           </div>
         </div>
-      </div>
+            </div>
 
-      {/*<div class="container my-5 py-0">
+            {/*<div class="container my-5 py-0">
         <div class="row  justify-content-center align-middle">
-          <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
-            <div>
+          <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" ListGr   <div>
               <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
-                About the Institute <br />
+          About the Institute <br />
               </h1>
               <p style={{ fontWeight: "400", textAlign: "justify" }}>
-                <a
-                  href="https://www.bits-pilani.ac.in/Goa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="modern-link"
-                >
-                  BITS Pilani K. K. Birla Goa Campus
-                </a>
-                &nbsp;is one of the four campuses of the&nbsp;
-                <a
-                  href="https://www.bits-pilani.ac.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="modern-link"
-                >
-                  Birla Institute of Technology &amp; Science, Pilani
-                </a>
-                {homepg_text}
+          <a
+            href="https://www.bits-pilani.ac.in/Goa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="modern-link"
+          >
+            BITS Pilani K. K. Birla Goa Campus
+          </a>
+          &nbsp;is one of the four campuses of the&nbsp;
+          <a
+            href="https://www.bits-pilani.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="modern-link"
+          >
+            Birla Institute of Technology &amp; Science, Pilani
+          </a>
+          {homepg_text}
               </p>
               <div class="d-flex" style={{ textAlign: "start" }}>
-                <Link to="/venue/bpgc-goa" class="black-button">
-                  VIEW MORE
-                </Link>
+          <Link to="/venue/bpgc-goa" class="black-button">
+            VIEW MORE
+          </Link>
               </div>
             </div>
           </div>
@@ -234,7 +199,7 @@ function Home() {
             <img src={BITSDClassroom} alt="" class="img-fluid" />
           </div>
         </div>
-      </div>*/}
+            </div>*/}
 
       <div class="container py-4 my-5">
         <div class="row justify-content-center">
@@ -243,11 +208,11 @@ function Home() {
           </div>
           <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
+              <h1 class="" style={{ textAlign: "start", fontWeight: "light", color: "white" }}>
                 About qBITS
                 <br />
               </h1>
-              <p class="" style={{ fontWeight: "400", textAlign: "justify" }}>
+              <p class="" style={{ fontWeight: "400", textAlign: "justify", color: "white" }}>
                 {" "}
                 {homepg_text2}{" "}
               </p>
@@ -268,21 +233,21 @@ function Home() {
           </div>
           <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
+              <h1 class="" style={{ textAlign: "start", fontWeight: "light", color: 'white' }}>
                 About the Fall Fest
                 <br />
               </h1>
-              <p class="" style={{ fontWeight: "400", textAlign: "justify" }}>
+              <p class="" style={{ fontWeight: "400", textAlign: "justify", color: 'white' }}>
                 {" "}
                 {homepg_text}{" "}
               </p>
-              {/* 
+              
                 <div class="d-flex" style={{ textAlign: "start" }}>
                   <Link to="/about/ctcp/" class="black-button">
-                    VIEW MORE
+                    Register Now!
                   </Link>
                 </div> 
-              */}
+              
             </div>
           </div>
         </div>
