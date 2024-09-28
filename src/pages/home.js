@@ -44,6 +44,11 @@ function Home() {
                     //justifyContent: "center", // Center vertically
                     alignItems: "center", // Center horizontally
                    }}>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <img src={qbits_logo} alt="Qubits Logo" style={{ height: "100px" , marginRight: "20px", padding: "10px"}} />
+                      <img src={crqit} alt="CRQIT Logo" style={{ height: "80px" }} />
+                      
+                    </div>
                   <h1
                     style={{
                       textAlign: "center",
