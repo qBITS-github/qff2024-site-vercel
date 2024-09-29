@@ -142,7 +142,7 @@
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  background: rgb(165, 110, 255);
+  background: rgb(245, 245, 245);
   border-radius: 3px;
   border: 4px solid #2b0e70;
   z-index: 10;
@@ -161,7 +161,7 @@
   width: 0;
   margin-top: -8px;
   border: solid transparent;
-  border-left-color: rgb(255, 255, 255);
+  border-left-color: rgb(165, 110, 255);
   border-width: 8px;
   pointer-events: none;
 }

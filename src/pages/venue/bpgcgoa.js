@@ -6,30 +6,31 @@ const aboutText2 = "Goa is a well-known and popular hotspot on the tourist map o
 
 function BPGCGoa() {
     return(
-        <div className="container" style={{marginBottom: "30px" /* marginLeft:"60px", marginTop: "40px" */}}>
-    <div className="titleStyle1">Venue</div>
-      <div className="titleStyle2">
-        BITS Goa
-      </div>
-      <div className="divider" style={{marginBottom: '30px'}}></div>
-      <div className="about-content">
-        <div className="about-mid-grid">
-          <p style={{fontWeight: '400'}} className="about-txt-cnt">
-            <a
-              class="modern-link"
-              href="https://www.bits-pilani.ac.in/Goa/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >BITS Pilani K. K. Birla Goa Campus</a>{aboutText}</p>
-          <p style={{fontWeight: '400'}} className="about-txt-cnt">{aboutText2}</p>
+      <div className="container" style={{marginBottom: "30px" /* marginLeft:"60px", marginTop: "40px" */, color: "white"}}>
+        <div className="titleStyle1" style={{color:"rgb(167, 113, 254)"}}>Venue</div>
+        <div className="titleStyle2">
+          BITS Goa
         </div>
-        <img
-          src={aboutbottompng}
-          alt="Scenic Campus View"
-          className="about-img-btm"
-        />
+        <div className="divider" style={{marginBottom: '30px'}}></div>
+        <div className="about-content">
+          <div className="about-mid-grid">
+            <p style={{fontWeight: '400'}} className="about-txt-cnt">
+              <a
+                className="modern-link"
+                href="https://www.bits-pilani.ac.in/Goa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: "white"}}
+              >BITS Pilani K. K. Birla Goa Campus</a></p><p style={{color: "white"}} className="about-txt-cnt">{aboutText}</p>
+            <p style={{fontWeight: '400', color:"whitesmoke"}} className="about-txt-cnt">{aboutText2}</p>
+          </div>
+          <img
+            src={aboutbottompng}
+            alt="Scenic Campus View"
+            className="about-img-btm"
+          />
+        </div>
       </div>
-    </div>
     );
 }
 
