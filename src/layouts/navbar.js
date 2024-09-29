@@ -53,7 +53,7 @@ function MyNavbar() {
 				<div class="container-fluid">
 					<div class="d-flex align-items-center">
 						<a class="navbar-brand my-2" href="/">
-							<img src={qbits_nobg} height="120" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '360px', height: 'auto'}} />
+							<img src={qbits_nobg} height="100" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '360px', height: 'auto'}} />
 						</a>
 						<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
