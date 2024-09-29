@@ -48,17 +48,15 @@ let DropDownItemLinked = ({link, showname}) => {
 function MyNavbar() {
 	return (
 		<div class="container-fluid" style={{background: '#0d1011'}}>
-			<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top" style={{background: '#0d1011', maxWidth: '100vw', overflowX: 'hidden'}}>
+			<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top" style={{background: '#0d1011'}}>
 				<div class="container-fluid">
-					<div class="d-flex align-items-center">
-						<a class="navbar-brand my-2" href="/">
-							<img src={qbits_nobg} height="100" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '60w', height: 'auto', maxHeight:"120px"}} />
-						</a>
-						<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-					</div>
-					<div class='collapse navbar-collapse in justify-content-end' id="navbarSupportedContent">
+					<a class="navbar-brand my-2" href="/">
+						<img src={qbits_nobg} height="100" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '60w', height: 'auto', maxHeight:"120px"}} />
+					</a>
+					<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class='collapse navbar-collapse justify-content-end' id="navbarSupportedContent">
 						<ul class="navbar-nav d-flex flex-wrap main-nav-list justify-content-end borderXwidth">
 							<NavWithoutDropDown link={"/"} showname={"Home"} />
 							<NavWithDropDown name="  About  ">

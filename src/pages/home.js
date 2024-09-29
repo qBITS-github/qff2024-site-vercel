@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import qffimg from "../images/Sponsored/Blog-Image_01.png";
 import BITSDClassroom from "../images/bits-d-classroom.jpg";
@@ -19,36 +20,66 @@ const homepg_text =
 const homepg_text2 =
   "Our Quantum Computing Club is dedicated to pushing the boundaries of what’s possible in computing. We actively participate in hackathons, discuss research papers, and organize a range of events throughout the year. Our signature event, the Qiskit Fall Fest, features engaging hackathons, coding challenges, and insightful talks from experts in the field. Whether you’re a seasoned coder or just curious about quantum mechanics, or don’t care at all about physics and computer science our community offers opportunities to learn, collaborate, and innovate and MOST IMPORTANTLY HAVE LOADS OF FUN!!!!!"
 function Home() {
+  const [logoStyle, setLogoStyle] = useState({
+    width: '100%',
+    height: 'auto'
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setLogoStyle({
+          width: '40%',
+          height: 'auto'
+        });
+      } else if (window.innerWidth < 900) {
+        setLogoStyle({
+          width: '50%',
+          height: 'auto'
+        });
+      } else {
+        setLogoStyle({
+          width: '100%',
+          height: 'auto'
+        });
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call handler right away so state gets updated with initial window size
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div>
       <div style={{ 
             background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${qffimg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: '90vh',
+            minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
         
       }}>
-      <div class="container" >
+      <div className="container" >
         <div  >
-          <div class="col-sm-12 col-md-12" >
+          <div className="col-sm-12 col-md-12" >
             <div
-              class="p-4"
+              className="p-4"
               
             >
-              <div class="d-flex">
+              <div className="d-flex">
               <div className="col-sm-12 col-md-12" style={{
                     minHeight: "100px",
                     display: "flex",
                     flexDirection: "column",
-                    //justifyContent: "center", // Center vertically
+                   
                     alignItems: "center", // Center horizontally
                    }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <img src={qbits_logo} alt="Qubits Logo" style={{ height: "100px" , marginRight: "20px", padding: "10px"}} />
-                      <img src={crqit} alt="CRQIT Logo" style={{ height: "80px" }} />
+                      <img src={qbits_logo} alt="Qubits Logo" className="responsive-img" style={{ height: "150px" , marginRight: "20px", padding: "10px"}} />
+                      <img src={crqit} alt="CRQIT Logo" className="responsive-img" style={{ height: "80px" }} />
                       
                     </div>
                   <h1
@@ -66,30 +97,29 @@ function Home() {
                   <h3 style={{ fontWeight: "300", color: "white" }}>November 16-24 | 2024</h3>
                 </div>
               </div>
-              <div class="d-flex-inline" style={{
+              <div className="d-flex-inline" style={{
                     minHeight: "50px",
                     display: "flex",
                     flexDirection: "column",
-                    //justifyContent: "center", // Center vertically
                     alignItems: "center",}}>
                 {/* <a
                   download
                   href="documents/CTCPB_2025.pdf"
-                  class="black-button m-1"
+                  className="black-button m-1"
                 >
                   {" "}
-                  Schedule <i class="fa fa-download" aria-hidden="true"></i>
+                  Schedule <i className="fa fa-download" aria-hidden="true"></i>
                 </a> */}
                 <a
                   download
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"
-                  class="black-button m-1"
+                  className="black-button m-1"
                 >
                   {" "}
                   Register Now! <i  aria-hidden="true"></i>
                 </a>
               </div>
-              <div class="d-flex" style={{ textAlign: "start" }}>
+              <div className="d-flex" style={{ textAlign: "start" }}>
                 
               </div>
             </div>
@@ -104,7 +134,7 @@ function Home() {
       {/* code to add single sponsorship and associated BY */}
 
       {/* <div className=" d-flex">
-        <div class="row">
+        <div className="row">
         <h2 className="my-5 text-center">IN ASSOCIATION WITH</h2>
         <div className="justify-content-center">
           <img
@@ -116,7 +146,7 @@ function Home() {
         </div>
         </div>
 
-        <div class="row">
+        <div className="row">
 
         <h2 className="my-5 text-center">SPONSORED BY</h2>
         <div className="justify-content-center">
@@ -133,11 +163,11 @@ function Home() {
 
 
 
-            <div class="container my-5 py-0">
-        <div class="row  justify-content-center align-middle">
-          <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
+            <div className="container my-5 py-0">
+        <div className="row  justify-content-center align-middle">
+          <div className="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 class="" style={{ textAlign: "center", fontWeight: "light", color: "white" }}>
+              <h1 className="" style={{ textAlign: "center", fontWeight: "light", color: "white" }}>
           Events Lined up <br />
               </h1>
               <div
@@ -167,10 +197,10 @@ function Home() {
         </div>
             </div>
 
-            {/*<div class="container my-5 py-0">
-        <div class="row  justify-content-center align-middle">
-          <div class="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" ListGr   <div>
-              <h1 class="" style={{ textAlign: "start", fontWeight: "light" }}>
+            {/*<div className="container my-5 py-0">
+        <div className="row  justify-content-center align-middle">
+          <div className="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" ListGr   <div>
+              <h1 className="" style={{ textAlign: "start", fontWeight: "light" }}>
           About the Institute <br />
               </h1>
               <p style={{ fontWeight: "400", textAlign: "justify" }}>
@@ -178,7 +208,7 @@ function Home() {
             href="https://www.bits-pilani.ac.in/Goa/"
             target="_blank"
             rel="noopener noreferrer"
-            class="modern-link"
+            className="modern-link"
           >
             BITS Pilani K. K. Birla Goa Campus
           </a>
@@ -187,45 +217,45 @@ function Home() {
             href="https://www.bits-pilani.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
-            class="modern-link"
+            className="modern-link"
           >
             Birla Institute of Technology &amp; Science, Pilani
           </a>
           {homepg_text}
               </p>
-              <div class="d-flex" style={{ textAlign: "start" }}>
-          <Link to="/venue/bpgc-goa" class="black-button">
+              <div className="d-flex" style={{ textAlign: "start" }}>
+          <Link to="/venue/bpgc-goa" className="black-button">
             VIEW MORE
           </Link>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={BITSAudi} alt="" class="img-fluid" />
+          <div className="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
+            <img src={BITSAudi} alt="" className="img-fluid" />
           </div>
-          <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={BITSDClassroom} alt="" class="img-fluid" />
+          <div className="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
+            <img src={BITSDClassroom} alt="" className="img-fluid" />
           </div>
         </div>
             </div>*/}
 
-      <div class="container py-4 my-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={qbits} alt="ptcailogo" class="img-fluid" />
+      <div className="container py-4 my-5">
+        <div className="row justify-content-center">
+          <div className="col-lg-3 col-md-6 col-sm-12 d-block align-self-center order-1 order-md-0">
+            <img src={qbits} alt="ptcailogo" className="img-fluid responsive-img" style={logoStyle}  />
           </div>
-          <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
+          <div className="col-lg-8 col-md-12 p-3" style={{ minHeight: "20vh" }}>
             <div>
-              <h1 class="" style={{ textAlign: "start", fontWeight: "light", color: "white" }}>
+              <h1 className="" style={{ textAlign: "start", fontWeight: "light", color: "white" }}>
                 About qBITS
                 <br />
               </h1>
-              <p class="" style={{ fontWeight: "400", textAlign: "justify", color: "white" }}>
+              <p className="" style={{ fontWeight: "400", textAlign: "justify", color: "white" }}>
                 {" "}
                 {homepg_text2}{" "}
               </p>
-              <div class="d-flex" style={{ textAlign: "start" }}>
-                <Link to="qbits/" class="black-button">
+              <div className="d-flex" style={{ textAlign: "start" }}>
+                <Link to="qbits/" className="black-button">
                   VIEW MORE
                 </Link>
               </div>
@@ -234,24 +264,24 @@ function Home() {
         </div>
       </div>
 
-      <div class="container py-4 my-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 d-block d-lg-block d-none d-sm-none align-self-center">
-            <img src={qfflogo} alt="ctcpblogo" class="img-fluid" />
+      <div className="container py-4 my-5">
+        <div className="row justify-content-center">
+          <div className="col-lg-3 col-md-6 col-sm-12 d-block align-self-center order-1 order-md-0">
+            <img src={qfflogo} alt="ctcpblogo" className="img-fluid responsive-img" style={logoStyle}  />
           </div>
-          <div class="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
+          <div className="col-lg-8 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 class="" style={{ textAlign: "start", fontWeight: "light", color: 'white' }}>
+              <h1 className="" style={{ textAlign: "start", fontWeight: "light", color: 'white' }}>
                 About the Fall Fest
                 <br />
               </h1>
-              <p class="" style={{ fontWeight: "400", textAlign: "justify", color: 'white' }}>
+              <p className="" style={{ fontWeight: "400", textAlign: "justify", color: 'white' }}>
                 {" "}
                 {homepg_text}{" "}
               </p>
               
-                <div class="d-flex" style={{ textAlign: "start" }}>
-                  <Link to="/about/ctcp/" class="black-button">
+                <div className="d-flex" style={{ textAlign: "start" }}>
+                  <Link to="/about/ctcp/" className="black-button">
                     Register Now!
                   </Link>
                 </div> 
