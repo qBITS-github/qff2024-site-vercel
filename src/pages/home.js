@@ -11,6 +11,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import qfflogo from "../images/Sponsored/QFF_dark.png";
 import { ListGroup } from "react-bootstrap";
+import qbits_logo from "../images/qbits_nobg.png";
+import crqit from "../images/CRQIT.png";
 
 const homepg_text =
   "Qiskit Fall Fest is a collection of quantum computing events that invites students, researchers and industry professionals around the world to participate in a wide array of quantum-themed activities, ranging from quantum challenges, hackathons, and coding competitions to workshops, social events, and more. With each Qiskit Fall Fest, we partner with a select group of university students and other volunteer hosts to help them plan and run the global roster of Fall Fest events. This year's event theme, World of Quantum, celebrates the international scope of the event series and the rapid growth of the global quantum community.";

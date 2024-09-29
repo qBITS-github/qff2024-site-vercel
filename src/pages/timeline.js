@@ -28,7 +28,7 @@ class timelineEvent {
 const eventList = [
   new timelineEvent("1st Oct 2024", "Registration Begins"),
   new timelineEvent("16th Nov 2024", "Q101: An Introduction to Quantum Computing"),
-  new timelineEvent("17th", "Hackathon Problem announced"),
+  new timelineEvent("17th Nov 2024" , "Hackathon Problem announced"),
   new timelineEvent("23rd Nov 2024", "Challenges"),
   new timelineEvent("23rd Nov 2024", "Speaker's Session"),
   new timelineEvent("24th Nov 2024", "Results Announced"),
