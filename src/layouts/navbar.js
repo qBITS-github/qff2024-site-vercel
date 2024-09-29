@@ -46,14 +46,13 @@ let DropDownItemLinked = ({link, showname}) => {
 }
 
 function MyNavbar() {
-
 	return (
 		<div class="container-fluid" style={{background: '#0d1011'}}>
-			<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top " style={{background: '#0d1011'}}>
+			<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top" style={{background: '#0d1011', maxWidth: '100vw', overflowX: 'hidden'}}>
 				<div class="container-fluid">
 					<div class="d-flex align-items-center">
 						<a class="navbar-brand my-2" href="/">
-							<img src={qbits_nobg} height="100" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '360px', height: 'auto'}} />
+							<img src={qbits_nobg} height="100" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '60w', height: 'auto', maxHeight:"120px"}} />
 						</a>
 						<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -66,15 +65,15 @@ function MyNavbar() {
 								<DropDownItem link={"/about/bitspilani"} showname={"University"} />
 								<DropDownItemLinked link={"https://qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
 							</NavWithDropDown>
-							<NavWithoutDropDown link={"/speakers"} showname={"Speakers"}  />
-							<NavWithoutDropDownLinked link={"https://qbitsbpgc.wordpress.com"} showname={"Registration"}  />
-							<NavWithDropDown name="Venue" >
+							<NavWithoutDropDown link={"/speakers"} showname={"Speakers"} />
+							<NavWithoutDropDownLinked link={"https://qbitsbpgc.wordpress.com"} showname={"Registration"} />
+							<NavWithDropDown name="Venue">
 								<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
 								<DropDownItem link={"/venue/howtoreach"} showname={"How to reach?"} />
 							</NavWithDropDown>
-							<NavWithoutDropDown link={"/contact"} showname={"Contact Us"}  />
+							<NavWithoutDropDown link={"/contact"} showname={"Contact Us"} />
 						</ul>
-					</div>				
+					</div>
 				</div>
 			</nav>
 		</div>
