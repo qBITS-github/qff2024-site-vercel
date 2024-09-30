@@ -51,17 +51,29 @@ function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div>
-      <div style={{ 
-            background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${qffimg})`,
+    <div style={{ 
+      position: 'relative',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-around',
+}}>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        
+            background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${qffimg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: '100vh',
+            minHeight: '200vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
-        
-      }}>
+            opacity: '0.15',
+            zIndex: -1
+      }}></div>
       <div className="container" >
         <div  >
           <div className="col-sm-12 col-md-12" >
@@ -74,27 +86,29 @@ function Home() {
                     minHeight: "100px",
                     display: "flex",
                     flexDirection: "column",
-                   
                     alignItems: "center", // Center horizontally
                    }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <img src={qbits_logo} alt="Qubits Logo" className="responsive-img" style={{ height: "150px" , marginRight: "20px", padding: "10px"}} />
+                      <a href="https://qbitsbpgc.wordpress.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={qbits_logo} alt="Qbits Logo" className="responsive-img" style={{ height: "150px", marginRight: "20px", padding: "10px" }} />
+                      </a>
+                      {/* add link for crqit when available */}
                       <img src={crqit} alt="CRQIT Logo" className="responsive-img" style={{ height: "80px" }} />
-                      
                     </div>
                   <h1
                     style={{
                       textAlign: "center",
-                      fontWeight: "300",
+                      fontWeight: "800",
                       color: "white",
                       padding: "20px",
                       alignItems: 'center',
                       fontFamily: "IBM Plex Sans, sans-serif",
+                      fontSize: "4rem",
                     }}
                   >
                     Qiskit Fall Fest 2024
                   </h1>
-                  <h3 style={{ fontWeight: "300", color: "white" }}>November 16-24 | 2024</h3>
+                  <h3 style={{ fontWeight: "600", color: "white" }}>November 16-24 | 2024</h3>
                 </div>
               </div>
               <div className="d-flex-inline" style={{
@@ -127,7 +141,7 @@ function Home() {
           
         </div>
       </div>
-      </div>
+
 
       <Timer />
 
@@ -255,9 +269,9 @@ function Home() {
                 {homepg_text2}{" "}
               </p>
               <div className="d-flex" style={{ textAlign: "start" }}>
-                <Link to="qbits/" className="black-button">
+                 <a href="https://www.qbitsbpgc.wordpress.com" className="black-button" target="_blank" rel="noopener noreferrer">
                   VIEW MORE
-                </Link>
+                </a>
               </div>
             </div>
           </div>

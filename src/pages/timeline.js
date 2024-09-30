@@ -31,7 +31,7 @@ const eventList = [
   new timelineEvent("17th Nov 2024" , "Hackathon Problem announced"),
   new timelineEvent("23rd Nov 2024", "Challenges"),
   new timelineEvent("23rd Nov 2024", "Speaker's Session"),
-  new timelineEvent("24th Nov 2024", "Results Announced"),
+  new timelineEvent("24th Nov 2024", "Results Announced and Closing Ceremony"),
 ];
 
 function Timeline() {

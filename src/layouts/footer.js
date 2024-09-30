@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const links = {
     "instagram": "https://www.instagram.com/qbits.bitsgoa/",
-    "youtube": "https://www.youtube.com/qbits/videos",
-    "linkedin": "https://www.linkedin.com/school/birla-institute-of-technology-and-science-pilani---goa-campus/?originalSubdomain=in"
+    "youtube": "https://www.youtube.com/@qbits.bitsgoa",
+    "linkedin": "https://www.linkedin.com/company/qbits-bitsgoa/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Be0lQKrPoRkqXWNCYm02DDA%3D%3D"
 }
 
 let SocialLinks = ({fontawesomename, link}) => {
