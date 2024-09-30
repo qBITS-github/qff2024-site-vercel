@@ -27,7 +27,7 @@ function MyFooter() {
             <div class="container">
                 <div class="row my-3 justify-content-around">
                     <div class="col-md-3 col-sm-12">
-                        <h5 class="my-3 justify-content-center-md" style={{fontWeight: 'bold', textAlign: 'start'}}> 2025</h5>
+                        <h5 class="my-3 justify-content-center-md" style={{fontWeight: 'bold', textAlign: 'start'}}> 2024</h5>
                         <div class="">
                             <FooterNav navigateTo={"/"} name="Home" />
                             <FooterNav navigateTo={"/speakers"} name="Speakers" />
@@ -55,7 +55,7 @@ function MyFooter() {
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    &copy; 2025 All Rights Reserved<br />
+                    &copy; 2024 All Rights Reserved<br />
                     Designed &amp; Developed by qBITS
                 </div>
             </div>

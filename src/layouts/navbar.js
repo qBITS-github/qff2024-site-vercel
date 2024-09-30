@@ -49,14 +49,23 @@ function MyNavbar() {
 	return (
 		<div class="container-fluid" style={{background: '#0d1011'}}>
 			<nav class="navbar navbar-dark px-3 navbar-expand-lg sticky-top" style={{background: '#0d1011'}}>
-				<div class="container-fluid">
+				<div class="container-fluid d-flex align-items-center">
 					<a class="navbar-brand my-2" href="/">
 						<img src={qbits_nobg} height="10" class="align-top p-1 img-fluid" alt="qfflogo" style={{maxWidth: '40w', height: 'auto', maxHeight:"140px", marginLeft:"-50px"}} />
 					</a>
 					<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class='collapse navbar-collapse justify-content-end' id="navbarSupportedContent">
+					<div class='collapse navbar-collapse justify-content-end' id="navbarSupportedContent"
+					//  style={{
+          //     position: 'absolute', // Makes the menu float over the body
+          //     top: '100%', // Below the navbar
+          //     left: '0',
+          //     right: '0',
+          //     backgroundColor: '#0d1011', // Same background as navbar
+          //     zIndex: 9999, // Ensures it is on top of the rest of the content
+					//   }}
+					>
 						<ul class="navbar-nav d-flex flex-wrap main-nav-list justify-content-end borderXwidth">
 							<NavWithoutDropDown link={"/"} showname={"Home"} />
 							<NavWithDropDown name="  About  ">

@@ -57,22 +57,20 @@ function Home() {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-around',
-}}>
+    }}>
       <div style={{
         position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
-        
-            background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${qffimg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: '200vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            opacity: '0.15',
-            zIndex: -1
+        background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${qffimg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top',
+        minHeight: '200vh',
+        display: 'flex',
+        justifyContent: 'space-around',
+        opacity: '0.5',
+        zIndex: -1
       }}></div>
       <div className="container" >
         <div  >
