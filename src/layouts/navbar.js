@@ -87,7 +87,7 @@ function MyNavbar() {
 								<DropDownItemLinked link={"https://qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
 							</NavWithDropDown>
 							<NavWithoutDropDown link={"/speakers"} showname={"Speakers"} />
-							<NavWithoutDropDownLinked link={"https://qbitsbpgc.wordpress.com"} showname={"Registration"} />
+							<NavWithoutDropDownLinked link={"https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"} showname={"Registration"} />
 							<NavWithDropDown name="Venue">
 								<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
 								<DropDownItem link={"/venue/howtoreach"} showname={"Directions"} />
