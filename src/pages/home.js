@@ -14,6 +14,7 @@ import qfflogo from "../images/Sponsored/QFF_dark.png";
 import { ListGroup } from "react-bootstrap";
 import qbits_logo from "../images/qbits_nobg.png";
 import crqit from "../images/CRQIT.png";
+import "../pages/test.css";
 
 const homepg_text =
   "Qiskit Fall Fest is a collection of quantum computing events that invites students, researchers and industry professionals around the world to participate in a wide array of quantum-themed activities, ranging from quantum challenges, hackathons, and coding competitions to workshops, social events, and more. With each Qiskit Fall Fest, we partner with a select group of university students and other volunteer hosts to help them plan and run the global roster of Fall Fest events. This year's event theme, World of Quantum, celebrates the international scope of the event series and the rapid growth of the global quantum community.";
@@ -84,44 +85,51 @@ function Home() {
                     minHeight: "100px",
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "center", // Center horizontally
-                   }}>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <a href="https://qbitsbpgc.wordpress.com/" target="_blank" rel="noopener noreferrer">
-                        <img src={qbits_logo} alt="Qbits Logo" className="responsive-img" style={{ height: "150px", marginRight: "20px", padding: "10px" }} />
-                      </a>
-                      {/* add link for crqit when available */}
-                      <img src={crqit} alt="CRQIT Logo" className="responsive-img" style={{ height: "80px" }} />
-                    </div>
-                  <h1
-                    style={{
-                      textAlign: "center",
-                      fontWeight: "800",
-                      color: "white",
-                      padding: "20px",
-                      alignItems: 'center',
-                      fontFamily: "IBM Plex Sans, sans-serif",
-                      fontSize: "4rem",
-                    }}
-                  >
-                    Qiskit Fall Fest 2024
-                  </h1>
-                  <h3 style={{ fontWeight: "600", color: "white" }}>November 16-24 | 2024</h3>
-                </div>
-              </div>
-              <div className="d-flex-inline" style={{
-                    minHeight: "50px",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",}}>
-                {/* <a
-                  download
-                  href="documents/CTCPB_2025.pdf"
-                  className="black-button m-1"
-                >
-                  {" "}
-                  Schedule <i className="fa fa-download" aria-hidden="true"></i>
-                </a> */}
+                    // Center horizontally
+                               }}>
+                              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingBottom: "20px", marginTop:"-25px", maxHeight:"120px"}}>
+                                <a href="https://qbitsbpgc.wordpress.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={qbits_logo} alt="Qbits Logo" className="responsive-img" style={{ maxHeight: "100px", marginRight: "20px", height:"auto", maxWidth:"40vw"}} />
+                                </a>
+                                {/* add link for crqit when available */}
+                                 <a href="https://sites.google.com/view/crqit-bitsgoa/home" target="_blank" rel="noopener noreferrer">
+                                <img src={crqit} alt="CRQIT Logo" className="responsive-img" style={{ height: "auto", maxWidth:"50vw", maxHeight:"50px" }} />
+                                </a>
+                              </div>
+                              <h1
+                              class = "gradient-text responsive-text"
+                              style={{
+                                textAlign: "center",
+                                fontWeight: "600",
+                                color: "white",
+                                padding: "20px",
+                                alignItems: 'center',
+                                fontFamily: "IBM Plex Sans, sans-serif",
+                                
+                                
+                              }}
+                              >
+                              Qiskit Fall Fest 2024
+                              </h1>
+                              
+                              <h3 style={{ fontWeight: "600", color: "white" }}>November 16-24 | 2024</h3>
+                              
+                            </div>
+                            </div>
+                            <div className="d-flex-inline" style={{
+                              minHeight: "50px",
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              marginBottom: "20px"}}> {/* Added space below */}
+                            {/* <a
+                              download
+                              href="documents/CTCPB_2025.pdf"
+                              className="black-button m-1"
+                            >
+                              {" "}
+                              Schedule <i className="fa fa-download" aria-hidden="true"></i>
+                            </a> */}
                 <a
                   download
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"
@@ -139,9 +147,10 @@ function Home() {
           
         </div>
       </div>
-
-
       <Timer />
+
+
+      
 
       {/* code to add single sponsorship and associated BY */}
 
@@ -179,28 +188,29 @@ function Home() {
         <div className="row  justify-content-center align-middle">
           <div className="col-lg-5 col-md-12 p-3" style={{ minHeight: "350px" }}>
             <div>
-              <h1 className="" style={{ textAlign: "center", fontWeight: "light", color: "white" }}>
-          Events Lined up <br />
-              </h1>
+              
+              
               <div
           style={{
-            backgroundColor: "#0a0c0d",
-            fontSize: "1.2rem",
-            fontWeight: "400",
+            backgroundColor: "rgb(10, 12, 13, 0.8)",
+            borderRadius: "15px", fontWeight: "400",
           }}
               >
+                <h1 className="" style={{ textAlign: "center", fontWeight: "light", color: "white", paddingTop: "15px" }}>
+          Events Lined up <br />
+              </h1>
           <ListGroup variant="flush">
             <hr style={{ backgroundColor: 'white' }} />
-            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Intro to Quantum Computing - Q101 • </ListGroup.Item>
+            <ListGroup.Item style={{ backgroundColor: 'rgb(10, 12, 13, 0)' , color: 'white' }}> • Intro to Quantum Computing - Q101 • </ListGroup.Item>
             <hr style={{ backgroundColor: 'white' }} />
-            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}>
+            <ListGroup.Item style={{ backgroundColor: 'rgb(10, 12, 13, 0)', color: 'white' }}>
               {" "}
               • Quest - Quantum Hackathon •{" "}
             </ListGroup.Item >
             <hr style={{ backgroundColor: 'white' }} />
-            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Qiskit Challenges • </ListGroup.Item>
+            <ListGroup.Item style={{ backgroundColor: 'rgb(10, 12, 13, 0)', color: 'white' }}> • Qiskit Challenges • </ListGroup.Item>
             <hr style={{ backgroundColor: 'white' }} />
-            <ListGroup.Item style={{ backgroundColor: '#0a0c0d', color: 'white' }}> • Talks by Guest Speakers • </ListGroup.Item>
+            <ListGroup.Item style={{ backgroundColor: 'rgb(10, 12, 13, 0)', color: 'white' }}> • Talks by Guest Speakers • </ListGroup.Item>
             <hr style={{ backgroundColor: 'white' }} />
           </ListGroup>
               </div>

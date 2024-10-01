@@ -1,0 +1,27 @@
+
+
+
+
+
+/* Default font sizes */
+.responsive-text {
+    font-size: 5rem;
+    margin-top: 10vh;
+    
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 3rem;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+    .responsive-text {
+        font-size: 3rem;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+}

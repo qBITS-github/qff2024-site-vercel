@@ -59,7 +59,7 @@ const Timer = () => {
             <div 
             className="card col-lg-2 col-md-3 col-sm-3 px-0 py-lg-5 col"  
             style={{ 
-            background: '#0a0c0d', 
+            background: 'rgb(10, 12, 13, 0.7)', 
             color: 'white',
             position: 'relative'
             }}
