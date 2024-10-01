@@ -87,9 +87,9 @@ function Home() {
                     flexDirection: "column",
                     // Center horizontally
                                }}>
-                              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingBottom: "20px", marginTop:"-25px", maxHeight:"120px"}}>
+                              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingBottom: "24px", marginTop:"-25px", maxHeight:"200px"}}>
                                 <a href="https://qbitsbpgc.wordpress.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={qbits_logo} alt="Qbits Logo" className="responsive-img" style={{ maxHeight: "100px", marginRight: "20px", height:"auto", maxWidth:"40vw"}} />
+                                <img src={qbits_logo} alt="Qbits Logo" className="responsive-img" style={{ maxHeight: "120px", marginRight: "20px", height:"auto", maxWidth:"40vw"}} />
                                 </a>
                                 {/* add link for crqit when available */}
                                  <a href="https://sites.google.com/view/crqit-bitsgoa/home" target="_blank" rel="noopener noreferrer">
@@ -100,11 +100,12 @@ function Home() {
                               class = "gradient-text responsive-text"
                               style={{
                                 textAlign: "center",
-                                fontWeight: "600",
+                                fontWeight: "400",
                                 color: "white",
-                                padding: "20px",
+                                padding: "24px",
                                 alignItems: 'center',
                                 fontFamily: "IBM Plex Sans, sans-serif",
+                                
                                 
                                 
                               }}
@@ -121,7 +122,7 @@ function Home() {
                               display: "flex",
                               flexDirection: "column",
                               alignItems: "center",
-                              marginBottom: "20px"}}> {/* Added space below */}
+                              marginBottom: "50px"}}> {/* Added space below */}
                             {/* <a
                               download
                               href="documents/CTCPB_2025.pdf"
@@ -134,6 +135,7 @@ function Home() {
                   download
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"
                   className="black-button m-1"
+                  
                 >
                   {" "}
                   Register Now! <i  aria-hidden="true"></i>
