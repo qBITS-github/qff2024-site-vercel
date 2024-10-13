@@ -1,17 +1,9 @@
-## 46th Annual Meeting of Plant Tissue Culture Association, India.
+## IBM Qiskit Fall Fest 2024 - Quest (BITS Goa Edition Official Website)
+
+This is the website for the 3rd edition of IBM Qiskit Fall Fest in as many years. <br><br>
 
 
-This is the website for the 46th Annual Meeting of Plant Tissue Culture Association, India, regarding the Current Trends and Challenges in Plant Biotechnology (CTCPB). <br><br>
-The Website is in development phase at the moment.<br>
-For testing purposes it has been deployed here: 
 
-## To deploy it at your own preferred URL
-Change `PUBLIC_URL` from `.env` file in the base directory.
-Please do not perform any changes in the `package.json` file.
-For example: 
-```ruby
-PUBLIC_URL = "https://www.example.com/"
-```
 ## Available Scripts
 
 In the project directory, you can run:
