@@ -4,9 +4,11 @@ function SpeakerLink({ link }) {
       href={link}
       target="_blank"
       rel="nopener noreferrer"
-      style={{ all: "unset", cursor: "pointer" }}
+      style={{ all: "unset", cursor: "pointer", display: "flex", justifyContent: "center" }}
     >
-      <div className="boxStyleView">VIEW MORE &#160; &#x2192;</div>
+      <div className="boxStyleView" style={{ borderRadius: "10px", padding: "2px 5px", backgroundColor: "#f0f0f0", textAlign: "center" }}>
+        VIEW MORE &#160; &#x2192;
+      </div>
     </a>
   );
 }
@@ -40,7 +42,7 @@ class SpeakerHelper {
         className="speakerImg"
         src={speaker.speakerImage}
         alt={speaker.speakerName}
-        style={{ ...SpeakerHelper.speakerImageStyle, borderRadius: "50%", marginBottom: "10px", width: "100px", height: "100px" }}
+        style={{ ...SpeakerHelper.speakerImageStyle, borderRadius: "50%", marginBottom: "10px", width: "120px", height: "120px" }}
           />
           <div className="speakerName" style={{ color: "#ffffff", fontFamily: "IBM Plex Sans", fontWeight: "bold", marginBottom: "-10px", textAlign: "center" }}>{speaker.speakerName}</div>
           <div className="upperDiv" style={{ textAlign: "center" }}>
@@ -89,15 +91,22 @@ const invitedSpeakers = [
   {
     speakerName: "Sreekuttan L S",
     speakerImage: "https://media.licdn.com/dms/image/v2/D5603AQG5dx0gHk9ksQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724992969900?e=1737590400&v=beta&t=3WktQR4J5WkgYwU3HrDLYtiZpkZh-_GYBLSSsELD9Fo",
-    speakerText: " CEO of Bloq Quantum, simplifies quantum adoption with an easy-to-use low-code tool. An IISER Pune graduate, he helps businesses unlock quantum computing's potential for growth and innovation.",
+    speakerText: "Co-Founder & CEO of Bloq Quantum",
     SpeakerLink: "https://www.linkedin.com/in/sreekuttanls/?originalSubdomain=in",
     speakerLinkStyle: { color: "blue" }
   },
   {
     speakerName: "Guncha Malik",
     speakerImage: "https://media.licdn.com/dms/image/v2/D4D03AQHdkkVVcApoHg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669876540289?e=1737590400&v=beta&t=8kLzZHe7sKNHfKJ4axMrQUkKGrWIT6OEzL3CDYr-Knc",
-    speakerText: "STSM at IBM Cloud Platform, specializes in secure cloud ecosystems and Quantum Safe Cryptography. She focuses on ethical AI and quantum computing, ensuring secure and innovative technology integration..",
-    SpeakerLink: "https://example.com/jane-smith",
+    speakerText: " IBM Quantum Ambassador, Qiskit Advocate",
+    SpeakerLink: "https://www.linkedin.com/in/guncha/",
+    speakerLinkStyle: { color: "green" }
+  },
+  {
+    speakerName: "Paritit Deb",
+    speakerImage: "https://media.licdn.com/dms/image/v2/C5603AQHt6pwrcpsKFA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1617206610638?e=1737590400&v=beta&t=0I5lr4OoVWge9OkpPgf0Z7RZCjouCQ_RNTZXrvHmnR0",
+    speakerText: "Postdoctoral Researcher in Physics at Yale University",
+    SpeakerLink: "https://www.linkedin.com/in/pratiti-deb-b4370aba/",
     speakerLinkStyle: { color: "green" }
   }
 ];

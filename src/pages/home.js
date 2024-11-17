@@ -15,11 +15,96 @@ import { ListGroup } from "react-bootstrap";
 import qbits_logo from "../images/qbits_nobg.png";
 import crqit from "../images/CRQIT.png";
 import "../pages/test.css";
+const scaleDown = (size) => `${parseFloat(size) * 0.8}px`;
+
+const styles = {
+  container: {
+    position: 'relative',
+    minHeight: scaleDown('100vh'),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+  },
+  background: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${qffimg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'top',
+    minHeight: scaleDown('200vh'),
+    display: 'flex',
+    justifyContent: 'space-around',
+    opacity: '0.5',
+    zIndex: -1,
+  },
+  logo: {
+    maxHeight: scaleDown('120px'),
+    marginRight: scaleDown('20px'),
+    height: 'auto',
+    maxWidth: '40vw',
+  },
+  crqitLogo: {
+    height: 'auto',
+    maxWidth: '50vw',
+    maxHeight: scaleDown('50px'),
+  },
+  heading: {
+    textAlign: 'center',
+    fontWeight: '400',
+    color: 'white',
+    padding: scaleDown('24px'),
+    alignItems: 'center',
+    fontFamily: 'IBM Plex Sans, sans-serif',
+  },
+  subheading: {
+    fontWeight: '600',
+    color: 'white',
+  },
+  button: {
+    marginBottom: scaleDown('50px'),
+  },
+  eventsContainer: {
+    minHeight: scaleDown('350px'),
+  },
+  eventsList: {
+    backgroundColor: 'rgb(10, 12, 13, 0.8)',
+    borderRadius: '15px',
+    fontWeight: '400',
+  },
+  eventsHeading: {
+    textAlign: 'center',
+    fontWeight: 'light',
+    color: 'white',
+    paddingTop: scaleDown('15px'),
+  },
+  eventsItem: {
+    backgroundColor: 'rgb(10, 12, 13, 0)',
+    color: 'white',
+  },
+  aboutContainer: {
+    minHeight: scaleDown('20vh'),
+  },
+  aboutHeading: {
+    textAlign: 'start',
+    fontWeight: 'light',
+    color: 'white',
+  },
+  aboutText: {
+    fontWeight: '400',
+    textAlign: 'justify',
+    color: 'white',
+  },
+  aboutButton: {
+    textAlign: 'start',
+  },
+};
 
 const homepg_text =
   "Qiskit Fall Fest is a collection of quantum computing events that invites students, researchers and industry professionals around the world to participate in a wide array of quantum-themed activities, ranging from quantum challenges, hackathons, and coding competitions to workshops, social events, and more. With each Qiskit Fall Fest, we partner with a select group of university students and other volunteer hosts to help them plan and run the global roster of Fall Fest events. This year's event theme, World of Quantum, celebrates the international scope of the event series and the rapid growth of the global quantum community.";
 const homepg_text2 =
-  "Our Quantum Computing Club is dedicated to pushing the boundaries of what’s possible in computing. We actively participate in hackathons, discuss research papers, and organize a range of events throughout the year. Our signature event, the Qiskit Fall Fest, features engaging hackathons, coding challenges, and insightful talks from experts in the field. Whether you’re a seasoned coder or just curious about quantum mechanics, or don’t care at all about physics and computer science our community offers opportunities to learn, collaborate, and innovate and MOST IMPORTANTLY HAVE LOADS OF FUN!!!!!"
+  "Our Quantum Computing Club is dedicated to pushing the boundaries of what’s possible in computing. We actively participate in hackathons, discuss research papers, and organize a range of events throughout the year. Our signature event, the Qiskit Fall Fest, features engaging hackathons, coding challenges, and insightful talks from experts in the field. Whether you’re a seasoned coder or just curious about quantum mechanics, or don’t care at all about physics and computer science our community offers opportunities to learn, collaborate, and innovate and MOST IMPORTANTLY HAVE LOADS OF FUN!!!!!";
 function Home() {
   const [logoStyle, setLogoStyle] = useState({
     width: '100%',

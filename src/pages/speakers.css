@@ -1,0 +1,15 @@
+.speakers-grid {
+    display: grid;
+    gap: 20px;
+          
+    position: "relative";
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Default for larger screens */
+  }
+  
+  @media (max-width: 768px) {
+    .speakers-grid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+  

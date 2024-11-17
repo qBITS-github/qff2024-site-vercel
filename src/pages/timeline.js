@@ -27,24 +27,20 @@ class timelineEvent {
 
 const eventList = [
   new timelineEvent("1st Oct 2024", "Registration Begins"),
-  new timelineEvent("16th Nov 2024", "Q101: An Introduction to Quantum Computing"),
-  new timelineEvent("17th Nov 2024" , "Hackathon Problem announced"),
-  new timelineEvent("23rd Nov 2024", "Challenges"),
-  new timelineEvent("23rd Nov 2024", "Speaker's Session"),
-  new timelineEvent("24th Nov 2024", "Results Announced and Closing Ceremony"),
+  new timelineEvent("18th Nov 2024", "Q101: An Introduction to Quantum Computing"),
+  
+  new timelineEvent("19-20th Nov 2024" , "Qiskit Challenges"),
+  new timelineEvent("21st Nov 2024", "Hackathon Begins"),
+  new timelineEvent("22nd Nov 2024", "Hackathon Ends"),
+  new timelineEvent("23rd Nov 2024", "Results Announced and Closing Ceremony"),
+  
 ];
 
 function Timeline() {
   return (
-    // <div className="container">
-    //    <div className="titleStyle1">Timeline</div>
-    // <div className="titleStyle2">Of Events</div>
-    // <ExcuseCard excuseType={Excuses.TBU} />
-
-    // </div>
     <div class="container">
-      <div className="titleStyle1">Timeline</div>
-      <div className="titleStyle2">Of Events</div>
+      <div className="titleStyle1" style={{ color: "white" }}>Timeline Of Events</div>
+      
       <div class="divider" style={{ marginBottom: "30px" }}></div>
       <section class="section-timeline">
         <div class="scale">
