@@ -9,17 +9,20 @@ function Speakers() {
       className="container"
       style={{
         marginBottom: "50px",
+        backgroundColor: "111415",
+        borderRadius: "10px", // Added rounded corners
       }}
     >
-      <div className="titleStyle1" style={{color: "white"}}>Invited Speakers</div>
-      <div class="divider" style={{ marginBottom: "30px" }}></div>
+      <div className="titleStyle1" style={{color: "white", borderRadius: "10px"}}>Invited Speakers</div>
+      <div className="divider" style={{ marginBottom: "30px", borderRadius: "10px" }}></div>
       <div
         className="flex speakers-grid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateColumns: "repeat(3, 1fr)",
           gap: "20px",
           position: "relative",
+          borderRadius: "10px", // Added rounded corners
         }}
       >
       {SpeakerHelper.getKeynoteSpeakerCards(invitedSpeakers)}
@@ -27,5 +30,5 @@ function Speakers() {
     </div>
   );
 }
-
+document.body.style.backgroundColor = "#111415";
 export default Speakers;

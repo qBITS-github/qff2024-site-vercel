@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react';
 
 
 // Change date from here and NOT from Timer function
-const date = "2024-11-16";
+const date = "2024-11-18T17:00:00";
 
 const Timer = () => {
 
