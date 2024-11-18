@@ -399,8 +399,9 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <div id="timeline">
       <Timeline />
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLogo from '../images/bits-logo.png';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import qbits from "../images/qbits logo.png"
 import qbits_nobg from "../images/2024.png"
 import qff from "../images/Sponsored/Fall Fest.jpg"
@@ -86,8 +87,12 @@ function MyNavbar() {
 								<DropDownItem link={"/about/bitspilani"} showname={"University"} />
 								<DropDownItemLinked link={"https://qbitsbpgc.wordpress.com"} showname={"qBITS-bpgc"} />
 							</NavWithDropDown>
-							<NavWithoutDropDown link={"/speakers"} showname={"Speakers"} />
 							<NavWithoutDropDownLinked link={"https://docs.google.com/forms/d/e/1FAIpQLSe5BJwXmjrvfUy0lVXqc8GhkNiXqQIHdycz3lExkB52pKWNYg/viewform?usp=sf_link"} showname={"Registration"} />
+              <li class="nav-item">
+              <ScrollLink class="nav-link text-light" style={{background: '#111415'}} to="timeline" smooth={true} duration={500}>
+                  Schedule
+                </ScrollLink></li>
+							<NavWithoutDropDown link={"/speakers"} showname={"Speakers"} />
 							<NavWithDropDown name="Venue">
 								<DropDownItem link={"/venue/bpgc-goa"} showname={"BITS Goa"} />
 								<DropDownItem link={"/venue/howtoreach"} showname={"Directions"} />
