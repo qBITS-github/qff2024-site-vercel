@@ -27,12 +27,12 @@ class timelineEvent {
 
 const eventList = [
   new timelineEvent("1st Oct 2024", "Registration Begins"),
-  new timelineEvent("18th Nov 2024", "Q101: An Introduction to Quantum Computing"),
-  
-  new timelineEvent("19-20th Nov 2024" , "Qiskit Challenges"),
+  new timelineEvent("18th Nov 2024", "Inaugration Ceremony"),
+  new timelineEvent("19th Nov 2024", "Q101: An Introduction to Quantum Computing"),
+  new timelineEvent("19-20th Nov 2024" , "Qiskit Challenges and a Speaker Session"),
   new timelineEvent("21st Nov 2024", "Hackathon Begins"),
   new timelineEvent("22nd Nov 2024", "Hackathon Ends"),
-  new timelineEvent("23rd Nov 2024", "Results Announced and Closing Ceremony"),
+  new timelineEvent("23rd Nov 2024", "Results Announced, Speaker Session and Closing Ceremony (Swag Distribution)"),
   
 ];
 
